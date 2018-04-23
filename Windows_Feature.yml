@@ -1,0 +1,7 @@
+---
+# This playbook uses the win_ping module to test connectivity to Windows hosts
+- name: "Install Windows Feature - RSAT-DHCP" 
+  Win_Feature
+  hosts: all 
+  state: absent
+  restart: no
